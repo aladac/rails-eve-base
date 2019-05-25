@@ -1,4 +1,7 @@
 # Rails::Eve::Base
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d7c41f3367264949827b5bd74cc12fa0)](https://app.codacy.com/app/aladac/rails-eve-base?utm_source=github.com&utm_medium=referral&utm_content=aladac/rails-eve-base&utm_campaign=Badge_Grade_Dashboard)
+
 Short description and motivation.
 
 ## Usage
