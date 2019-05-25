@@ -15,3 +15,7 @@ gemspec
 
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
+
+gem "slim", "~> 4.0"
+
+gem "slim-rails", "~> 3.2"
