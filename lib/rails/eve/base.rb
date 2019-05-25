@@ -1,4 +1,6 @@
-require "rails/eve/base/railtie"
+# frozen_string_literal: true
+
+require 'rails/eve/base/railtie'
 
 module Rails
   module Eve

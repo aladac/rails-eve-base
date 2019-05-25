@@ -24,6 +24,7 @@ class Corporation
 
   def create_alliance
     return false unless alliance_id
+
     Alliance.create_from_api(alliance_id)
   end
 end

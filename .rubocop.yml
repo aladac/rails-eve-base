@@ -1,0 +1,54 @@
+Rails:
+  Enabled: true
+Rails/HasAndBelongsToMany:
+  Enabled: false
+Rails/OutputSafety:
+  Exclude:
+    - 'app/helpers/**/*'
+Rails/DynamicFindBy:
+  Enabled: false
+Rails/TimeZone:
+  Exclude:
+    - 'config/initializers/signet.rb'
+Rails/HasManyOrHasOneDependent:
+  Exclude:
+    - 'app/models/resource.rb'
+    - 'app/models/user.rb'
+Rails/SkipsModelValidations:
+  Exclude:
+    - 'app/models/integration.rb'
+    - 'app/lib/api/microsoft.rb'
+Metrics/MethodLength:
+  Exclude:
+    - 'lib/generators/**/*'
+Metrics/LineLength:
+  Max: 200
+  Exclude:
+    - 'spec/factories/**/*'
+Metrics/BlockLength:
+  Exclude:
+    - 'config/environments/*'
+    - 'spec/**/*'
+    - 'config/routes.rb'
+Style/ClassAndModuleChildren:
+  Enabled: false
+Lint/NonLocalExitFromIterator:
+  Exclude:
+    - 'app/models/resource.rb'
+    - 'app/controllers/membership_controller.rb'
+Documentation:
+  Enabled: false
+AllCops:
+  Exclude:
+    - 'node_modules/**/*'
+    - 'lib/tasks/cucumber.rake'
+    - 'bin/*'
+    - 'db/migrate/*'
+    - 'db/seeds.rb'
+    - 'db/schema.rb'
+    - 'vendor/bundle/**/*'
+Naming/MethodName:
+  Exclude:
+    - 'app/serializers/*'
+Bundler/DuplicatedGem:
+  Enabled: false

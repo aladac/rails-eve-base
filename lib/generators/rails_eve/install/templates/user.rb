@@ -25,7 +25,7 @@ class User
 
   has_many :characters
 
-  def will_save_change_to_email? ;end
+  def will_save_change_to_email?; end
 
   def self.update_counter_caches
     all.each do |user|

@@ -6,15 +6,16 @@ module EsiCharacterApi
   def update_tokens(credentials)
     self.access_token = credentials['token']
     self.refresh_token = credentials['refresh_token']
-    self.token_expires = Time.at credentials['expires_at']
+    self.token_expires = Time.zone.at credentials['expires_at']
     save
   end
 
   def refresh_token!
-    return false if Time.now < token_expires
+    return false if Time.zone.now < token_expires
+
     self.access_token = refresh_token_request.access_token
     self.refresh_token = refresh_token_request.refresh_token
-    self.token_expires = Time.now + refresh_token_request.expires_in
+    self.token_expires = Time.zone.now + refresh_token_request.expires_in
     save
   end
 
