@@ -12,6 +12,9 @@ module RailsEve
 
       generate 'mongoid:config'
 
+      copy_file 'characters_controller.rb', './app/controllers/character_controller.rb'
+      copy_file 'rails-eve-base.html.slim', './app/views/layouts/rails-eve-base.html.slim'
+      copy_file 'index.html.slim', './app/views/characters/index.html.slim'
       copy_file 'omniauth.rb', './config/initializers/omniauth.rb'
       copy_file 'mongoid_setup.rb', './app/lib/mongoid_setup.rb'
       copy_file 'esi_character_api.rb', './app/models/concerns/esi_character_api.rb'
